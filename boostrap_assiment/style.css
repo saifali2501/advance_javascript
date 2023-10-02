@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+a{
+    text-decoration: none !important;
+    font-size: 20px;
+    color: white;
+}
+ul{
+    list-style: none !important;
+
+}
+header{
+    background-color: rgb(8, 10, 18);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1111;
+}
+button{
+    width: 100px;
+    border: 2px solid green;
+    color: green;
+    border-radius: 10px;
+
+}
+input{
+    text-align: center;
+    border-radius: 10px;
+}
+section{
+    background-color: rgb(54, 54, 64);
+}
+.slider{
+    background-color: rgb(54, 54, 64) ;
+    padding: 50px;
+}
+.main-box{
+    padding-top: 200px !important;
+}
+.btn-2{
+    width: 150px !important;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border: 2px solid transparent;
+}
+
+
+.bx-wrapper {
+    box-shadow: unset !important;
+    border: unset !important;
+    background:unset;
+}
+.page{
+    background-color: white
+    ;
+}
+.box{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    
+    /* margin-left: 70px; */
+    margin: auto;
+    border-radius: 50%;
+}
+.div1{
+    height: 400px;
+    width: 600px;
+    background-color: aqua;
+}
+ .tittle{
+    padding-top: 60px !important;
+}
+.div2{
+    height: 400px;
+    width: 500px;
+    background-color: green;
+    
+}

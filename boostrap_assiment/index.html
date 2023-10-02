@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="container ">
+            <div class="row py-4">
+                <div class="col-9 ">
+                    <ul class="d-flex gap-5 align-items-center">
+                        <li><a href="">Carousal</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Link</a></li>
+                        <li><a href="">Disabled</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                  <div class="main d-flex gap-2">
+                    <input type="text" placeholder="Serach">
+                    <button class="btn-danger p-1">Search</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<section>
+    <div class="container">
+        <div class="row py-5 main-box">
+            <div class="col-12 bxslider" style="position: fixed;">
+            <div class="slider text-end">              
+                <h2 class="mx-3 text-white">One More For good Measure</h2>
+                <p class="my-4 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptate in vero sunt placeat. Delectus ea molestiae, fugiat alias assumenda quidem incidunt maxime iusto est deserunt nesciunt nulla reiciendis error.</p>
+                <button class="btn-primary btn-2">Browser Gallery</button>
+            </div>
+
+            <div class="slider text-end">              
+                <h2 class="mx-3 text-white">One More For good Measure</h2>
+                <p class="my-4 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptate in vero sunt placeat. Delectus ea molestiae, fugiat alias assumenda quidem incidunt maxime iusto est deserunt nesciunt nulla reiciendis error.</p>
+                <button class="btn-primary btn-2">Browser Gallery</button>
+            </div>
+
+            <div class="slider text-end">              
+                <h2 class="mx-3 text-white">One More For good Measure</h2>
+                <p class="my-4 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptate in vero sunt placeat. Delectus ea molestiae, fugiat alias assumenda quidem incidunt maxime iusto est deserunt nesciunt nulla reiciendis error.</p>
+                <button class="btn-primary btn-2">Browser Gallery</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div></div>
+     
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</section>
+
+       <!-- jquery cdn -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+       <!-- bxslider js cdn -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+       <script>
+           $(function () {
+               $('.bxslider').bxSlider({
+                   mode: "fade",
+                   speed: 500,
+                   randomStart: true,
+                   infiniteLoop: true,
+                   
+                   pager: true,
+                  pagerType: "full",
+                   controls: true,
+                   autoControls: false,
+                   auto: true,
+                   autoHover: true,
+               });
+           });
+       </script>
+
+       <section class="page">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-4">
+                    <div class="box ">
+
+                    </div>
+                    <div class="text text-center py-3 ">
+                        <h3 class="display-1 fs-1 text-black">Heading1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga quaerat suscipit facilis ea cumque alias neque. Quasi, rem? Debitis, vero obcaecati! Excepturi dignissimos aliquid placeat quas necessitatibus? Ullam, totam!</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box ">
+
+                    </div>
+                    <div class="text text-center py-3 ">
+                        <h3 class="display-1 fs-1 text-black">Heading1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga quaerat suscipit facilis ea cumque alias neque. Quasi, rem? Debitis, vero obcaecati! Excepturi dignissimos aliquid placeat quas necessitatibus? Ullam, totam!</p>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="box ">
+
+                    </div>
+                    <div class="text text-center py-3 ">
+                        <h3 class="display-1 fs-1 text-black">Heading1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga quaerat suscipit facilis ea cumque alias neque. Quasi, rem? Debitis, vero obcaecati! Excepturi dignissimos aliquid placeat quas necessitatibus? Ullam, totam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <div>
+        <div class="container">
+            <div class="row p-5">
+            <div class="col-6">
+                <div class="tittle py-5">
+                    <h2 class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam incidunt facere ex deleniti dolorum quo earum dolore! Inventore assumenda vero aliquam consequatur suscipit. Quisquam voluptate</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="div1">
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+       </div>
+
+       <div>
+        <div class="container">
+            <div class="row p-1 ">
+            <div class="col-6">
+                <div class="div2">
+
+                </div>
+              
+            </div>
+            <div class="col-6">
+                <div class="tit py-5">
+                    <h2 class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam incidunt facere ex deleniti dolorum quo earum dolore! Inventore assumenda vero aliquam consequatur suscipit. Quisquam voluptate</p>
+                </div>
+
+            </div>
+        </div>
+        </div>
+       </div>
+
+         <div>
+        <div class="container">
+            <div class="row p-5">
+            <div class="col-6">
+                <div class="tittle py-5">
+                    <h2 class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam incidunt facere ex deleniti dolorum quo earum dolore! Inventore assumenda vero aliquam consequatur suscipit. Quisquam voluptate</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="div1">
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+       </div>
+
+</body>
+</html>
