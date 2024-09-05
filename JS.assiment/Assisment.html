@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Restaurant Booking Form</h2>
+    <form id="bookingForm">
+        <div class="form-group">
+            <label for="bookingChoice">Choice of Booking:</label>
+            <select id="bookingChoice" name="bookingChoice">
+                <option value="" disabled selected>Select your booking choice</option>
+                <option value="fullDay">Full day booking</option>
+                <option value="halfDay">Half day booking</option>
+                <option value="hourly">Hourly booking</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="userName">User Name:</label>
+            <input type="text" id="userName" name="userName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="noOfPersons">No of Persons:</label>
+            <input type="number" id="noOfPersons" name="noOfPersons" min="1" required>
+        </div>
+
+        <div class="form-group" id="dateGroup">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group" id="timeGroup" style="display: none;">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+        </div>
+
+        <div class="form-group" id="slotGroup" style="display: none;">
+            <label for="slot">Slot:</label>
+            <select id="slot" name="slot">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select>
+        </div>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+
+    <script>
+        document.getElementById('bookingChoice').addEventListener('change', function () {
+            const bookingChoice = this.value;
+            const dateGroup = document.getElementById('dateGroup');
+            const timeGroup = document.getElementById('timeGroup');
+            const slotGroup = document.getElementById('slotGroup');
+
+            // Reset visibility of optional groups
+            dateGroup.style.display = 'block';
+            timeGroup.style.display = 'none';
+            slotGroup.style.display = 'none';
+
+            if (bookingChoice === 'fullDay') {
+                // Only date option is available
+                timeGroup.style.display = 'none';
+                slotGroup.style.display = 'none';
+            } else if (bookingChoice === 'halfDay') {
+                // Date and Slot option are shown
+                slotGroup.style.display = 'block';
+                timeGroup.style.display = 'none';
+            } else if (bookingChoice === 'hourly') {
+                // Date and Time option are available
+                timeGroup.style.display = 'block';
+                slotGroup.style.display = 'none';
+            }
+        });
+
+        document.getElementById('bookingForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Booking submitted successfully!');
+        });
+    </script>
+
+</body>
+</html>
