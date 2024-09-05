@@ -28,7 +28,8 @@ let familytree = {
       {
         name: "Shahabuddin",
         age: 40,
-        ocuupation: "labour",
+        ocuupation: "labourgek3k",
+        
         vehicle: [
           {
             name: "Shine",
